@@ -14,9 +14,12 @@ html {
   flex-flow: row wrap;
 
 }
-ul {
+ul,
+ol {
   list-style: none;
 }
+
+
 .main-nav li {
   margin: auto;
   width: calc(100% / 3);
@@ -45,9 +48,11 @@ ul {
 
 .project {
   width:100%;
-  display: inline-flex;
+  display: flex;
   flex-flow: row wrap;
   margin: 2em 0;
+  text-align: center;
+  color: white;
 }
 
 .project a {
@@ -63,8 +68,51 @@ ul {
   margin: auto;
 }
 
+.project p{
+  width:100%;
+}
+
+.skills {
+  margin: 1em auto;
+  color: lightsgrey;
+}
+.project ol {
+  width:100%;
+  justify-content: center;
+  color: orange;
+}
+
+.project li {
+  border-radius: 6px;
+  display: inline-block;
+  background: #ff9904;
+  color: white;
+  padding: 5px 10px;
+  margin: 2px;
+}
+
+.project li:nth-child(odd) {
+  background: #0399ff;
+}
+
+
 /* Media queries*/
 
+
+.contact {
+  display: flex;
+  flex-flow: column wrap;
+  text-align: center;
+  color:white;
+}
+
+.contact h2 {
+  margin: 1em;
+}
+.contact a {
+  color:white;
+  margin: 5px;
+}
 /* Tablet query */
 @media (min-width: 768px) {
   .main-nav a {
