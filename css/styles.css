@@ -39,9 +39,35 @@ ol {
   color: black;
 }
 
+
+/*About me*/
+#about-me  {
+  display: flex;
+  flex-flow: row wrap;
+}
+.avatar-container {
+  width: 100%;
+  display: flex;
+  flex-flow: row wrap;
+}
+
+#about-me img {
+  margin: auto;
+  border-radius: 50%;
+}
+
+#about-me p {
+  width:100%;
+  color:white;
+  text-align: center;
+  margin: auto;
+}
+
 /*Projects part*/
 
 #projects {
+  border-top: 5px solid white;
+  border-bottom: 5px solid white;
   display: flex;
   flex-flow: row wrap;
 }
@@ -121,6 +147,10 @@ ol {
   .project {
     width:50%;
   }
+
+  #about-me p {
+    width: 80%;
+  }
 }
 
 
@@ -131,5 +161,8 @@ ol {
   }
   .project {
     width:calc(100%/3);
+  }
+  #about-me p {
+    width: 50%;
   }
 }
