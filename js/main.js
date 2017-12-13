@@ -6,7 +6,6 @@ var clickCount = 0;
 
 $("#about-me img").on("click", () => {
   clickCount++;
-
   if(clickCount=== 5) {
     alert("Why are you clicking me");
   } else if (clickCount=== 10) {
