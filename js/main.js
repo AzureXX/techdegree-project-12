@@ -15,8 +15,8 @@ $("#about-me img").on("click", () => {
   } else if (clickCount=== 20) {
     alert("STOP IT NOW!!! OR YOU WILL REGRET!!!");
   } else if (clickCount=== 25) {
-    $("#about-me img").attr("src", "images/realface.png")
+    $("#about-me img").attr("src", "images/realface.png");
     alert("OK, you revealed my real face");
   }
 
-})
+});
