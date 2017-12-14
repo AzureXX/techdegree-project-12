@@ -55,7 +55,9 @@ ol {
   margin: auto;
   border-radius: 50%;
 }
-
+#about-me img:hover {
+  cursor: pointer;
+}
 #about-me p {
   width:100%;
   color:#7577BA;
